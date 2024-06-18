@@ -28,10 +28,23 @@ return {
         "stylua",
         "tailwindcss-language-server",
         "typescript-language-server",
+        "hadolint",
+        "dockerfile-language-server",
+        "codelldb",
       },
     },
   },
-
+  {
+    "jay-babu/mason-nvim-dap.nvim",
+    ft = { "c", "cpp", "rust" },
+    dependencies = {
+      "williamboman/mason.nvim",
+      "mfussenegger/nvim-dap",
+    },
+    opts = {
+      handlers = {},
+    },
+  },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -43,6 +56,7 @@ return {
         "css",
         "rust",
         "scala",
+        "dockerfile",
       },
     },
   },
@@ -179,5 +193,10 @@ return {
         desc = "Quickfix List (Trouble)",
       },
     },
+  },
+  {
+    "mrcjkb/rustaceanvim",
+    version = "^4", -- Recommended
+    lazy = false, -- This plugin is already lazy
   },
 }
