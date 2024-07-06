@@ -60,6 +60,7 @@ return {
         "scala",
         "sql",
         "dockerfile",
+        "just",
       },
     },
   },
